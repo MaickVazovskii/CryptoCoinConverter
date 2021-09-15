@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CryptoCoinConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="14"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="yih-YZ-FTo">
+            <objects>
+                <viewController storyboardIdentifier="second" id="rOd-Jc-EHF" customClass="HomeViewController" customModule="CryptoCoinConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xWE-2H-Cdf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tmm-Yg-Tz0">
+                                <rect key="frame" x="0.0" y="700" width="414" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="7uZ-5F-vWR"/>
+                                </constraints>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XRP" translatesAutoresizingMaskIntoConstraints="NO" id="rQV-gg-trK">
+                                <rect key="frame" x="87" y="108" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYS-ge-YLF">
+                                <rect key="frame" x="275.5" y="313" width="51.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="QxU-md-0zF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1K-0e-ots">
+                                <rect key="frame" x="87" y="313" width="22" height="42"/>
+                                <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Yy-Ig-Msi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rQV-gg-trK" firstAttribute="trailing" secondItem="wYS-ge-YLF" secondAttribute="trailing" id="1sI-qS-PLR"/>
+                            <constraint firstItem="rQV-gg-trK" firstAttribute="centerX" secondItem="Tmm-Yg-Tz0" secondAttribute="centerX" id="7M8-TP-Bav"/>
+                            <constraint firstItem="Tmm-Yg-Tz0" firstAttribute="bottom" secondItem="0Yy-Ig-Msi" secondAttribute="bottom" id="JgF-6W-M3X"/>
+                            <constraint firstItem="wYS-ge-YLF" firstAttribute="baseline" secondItem="U1K-0e-ots" secondAttribute="baseline" id="O2A-cT-KLd"/>
+                            <constraint firstItem="wYS-ge-YLF" firstAttribute="firstBaseline" secondItem="U1K-0e-ots" secondAttribute="firstBaseline" id="SwZ-Wo-8T8"/>
+                            <constraint firstItem="wYS-ge-YLF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="U1K-0e-ots" secondAttribute="trailing" constant="8" symbolic="YES" id="T6S-XP-zqw"/>
+                            <constraint firstItem="wYS-ge-YLF" firstAttribute="top" secondItem="rQV-gg-trK" secondAttribute="bottom" constant="77" id="YUJ-0E-ZUi"/>
+                            <constraint firstItem="Tmm-Yg-Tz0" firstAttribute="leading" secondItem="xWE-2H-Cdf" secondAttribute="leading" id="agj-Sd-Nbb"/>
+                            <constraint firstItem="wYS-ge-YLF" firstAttribute="top" secondItem="xWE-2H-Cdf" secondAttribute="top" constant="313" id="clQ-Vp-gW8"/>
+                            <constraint firstItem="rQV-gg-trK" firstAttribute="top" secondItem="0Yy-Ig-Msi" secondAttribute="top" constant="64" id="oOV-CS-5hD"/>
+                            <constraint firstItem="rQV-gg-trK" firstAttribute="leading" secondItem="U1K-0e-ots" secondAttribute="leading" id="p2j-XD-2ql"/>
+                            <constraint firstItem="U1K-0e-ots" firstAttribute="leading" secondItem="0Yy-Ig-Msi" secondAttribute="leading" constant="87" id="tB2-QM-vXy"/>
+                            <constraint firstItem="0Yy-Ig-Msi" firstAttribute="trailing" secondItem="wYS-ge-YLF" secondAttribute="trailing" constant="87" id="yMk-AI-Fln"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountOfSum" destination="U1K-0e-ots" id="gzV-fD-H4L"/>
+                        <outlet property="currencyImage" destination="rQV-gg-trK" id="fZ3-PJ-kNm"/>
+                        <outlet property="currencyName" destination="wYS-ge-YLF" id="kWi-YN-WlS"/>
+                        <outlet property="pickerView" destination="Tmm-Yg-Tz0" id="yvo-yE-Htc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amI-Kj-mwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="XRP" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
